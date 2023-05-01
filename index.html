@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Aprendendo inglês com áudio</title>
+</head>
+<body>
+
+    <section class="main">
+        <div class="area_section_main">
+            <div class="img_single_main">
+                <img src="assets/images/img.png" alt="img-page-first">
+            </div>
+            <div class="title">
+                <h1>Bem vindo(a)</h1>
+            </div>
+            <div class="description">
+                <h3>Antes de começar seu teste de inglês, digite seu nome</h3>
+            </div>
+            <div class="area_inputs">
+                <input class="input_name" type="text" name="inputName" placeholder="Como você quer ser chamado?">
+                <input type="button" value="Começar" class="btn_start">
+            </div>
+        </div>
+    </section>
+
+    <section class="section_questions">
+        <div class="progress_bar"></div>
+        <div class="area_section_questions">
+            <div class="btn_back">
+                <a href="/"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
+            </div>
+            <div class="touch_voice">
+                <div class="card"><img src="assets/images/record_voice_over.svg" alt="icon_voice"></div>
+            </div>
+            <div class="title_question">
+                <h2>Digite abaixo o que você entendeu</h2>
+            </div>
+            <div class="inputs_question">
+                <textarea class="textArea" cols="30" rows="5" placeholder="Qualquer dúvida, toque no ícone acima para ouvir novamente..."></textarea>
+                <input class="btn_next_question" type="button" value="Avançar">
+            </div>
+        </div>
+    </section>
+
+    <section class="page_end">
+        <div class="progress_bar"></div>
+        <div class="area_content">
+            <div class="area_img">
+                <img src="" alt="img-result">
+            </div>
+            <div class="area_result">
+                <h1 class="result_porcent"></h1>
+                <h2 class="person_name"></h2>
+                <h3 class="qtd_correct"></h3>
+                <div class="btns">
+                    <button class="btn_redo">Refazer</button>
+                    <button class="btn_finish">Finalizar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="area_footer">
+            <p>Desenvolvido por <a href="https://softjare.netlify.app/" target="_blank">Softjare</a></p>
+        </div>
+    </footer>
+    
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/e3dc242dae.js" crossorigin="anonymous"></script>
+</body>
+</html>
