@@ -4,6 +4,7 @@ const sectionPageEnd = document.querySelector('.page_end');
 const inputName = document.querySelector('.main .area_section_main .area_inputs .input_name');
 const btnStart = document.querySelector('.btn_start');
 const progressBar = document.querySelector('.progress_bar');
+const areaLoad = document.querySelector('.background_load');
 
 let currentQuestion = 0;
 let correctQuestions = 0;
@@ -48,7 +49,12 @@ function showQuestion() {
         speaking();
 
     }else {
-        finishQuiz();
+        areaLoad.style.display = 'flex';
+
+        setTimeout(() => {
+            finishQuiz();
+        }, 500);
+
     }
 }
 
@@ -81,6 +87,8 @@ function verifyResponse() {
 }
 
 function finishQuiz() {
+    areaLoad.style.display = 'none';
+
     let points = Math.floor((correctQuestions / questions.length) * 100);
 
     if(points < 30) {
