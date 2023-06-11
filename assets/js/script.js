@@ -53,7 +53,7 @@ function showQuestion() {
 
         setTimeout(() => {
             finishQuiz();
-        }, 500);
+        }, 1300);
 
     }
 }
